@@ -1,0 +1,14 @@
+
+
+.bordert{
+  position: relative;
+  border-top: 1px solid #aaa;
+}
+.bordert::after{
+  content: 'or Content with';
+  position: absolute;
+  top: -13px;
+  left: 33%;
+  background-color: #fff;
+  padding: 0 8px;
+}
