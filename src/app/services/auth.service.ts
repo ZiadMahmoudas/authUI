@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl:string = "https://localhost:7267/api/User/"
+  private baseUrl:string = "https://loginauthnticate.runasp.net/"
   constructor(private http:HttpClient) { }
   signUP(userObj:any){
     return this.http.post(`${this.baseUrl}register`,userObj);
